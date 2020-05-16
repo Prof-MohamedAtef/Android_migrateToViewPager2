@@ -10,6 +10,7 @@ import mo.ed.aad.viewpager2.fragments.FragmentOne;
 import mo.ed.aad.viewpager2.fragments.FragmentThree;
 import mo.ed.aad.viewpager2.fragments.FragmentTwo;
 
+// can use  RecyclerView.Adapter for paging through views
 public class ViewPagerFragmentAdapter extends FragmentStateAdapter {
 
     private ArrayList<Fragment> arrayList=new ArrayList<>();

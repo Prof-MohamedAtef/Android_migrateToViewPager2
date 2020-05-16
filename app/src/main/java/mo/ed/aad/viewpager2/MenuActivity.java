@@ -11,7 +11,7 @@ import mo.ed.aad.viewpager2.fragments.FragmentOne;
 import mo.ed.aad.viewpager2.fragments.FragmentThree;
 import mo.ed.aad.viewpager2.fragments.FragmentTwo;
 
-public class MainActivity extends AppCompatActivity {
+public class MenuActivity extends AppCompatActivity {
 
     private ViewPager2 myViewPager2;
     private ArrayList<Fragment> arrayList=new ArrayList<>();
