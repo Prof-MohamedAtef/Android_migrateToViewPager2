@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 import mo.ed.aad.viewpager2.adapter.ViewSliderAdapter;
 import mo.ed.aad.viewpager2.databinding.ActivityHomeBinding;
+import mo.ed.aad.viewpager2.transformers.FadeOutTransformation;
+import mo.ed.aad.viewpager2.transformers.HorizontalFlipTransformation;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -60,6 +62,7 @@ public class HomeActivity extends AppCompatActivity {
 
         mAdapter = new ViewSliderAdapter(getApplicationContext(), layouts);
         mBinding.viewPager.setAdapter(mAdapter);
+        mBinding.viewPager.setPageTransformer(new FadeOutTransformation());
         mBinding.viewPager.registerOnPageChangeCallback(mPageChangeCallback);
 
         mBinding.btnSkip.setOnClickListener(new View.OnClickListener() {
